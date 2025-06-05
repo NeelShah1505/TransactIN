@@ -1,5 +1,6 @@
- import Header from "@/components/header/Header";
+import Header from "@/components/header/Header";
 import Link from "next/link";
+import gnABI from "@/contract/gn.json";
 
 export default function Home() {
   return (
