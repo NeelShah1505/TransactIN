@@ -210,7 +210,7 @@
           { "internalType": "uint256", "name": "chainId", "type": "uint256" },
           { "internalType": "uint256", "name": "secretPin", "type": "uint256" }
         ],
-        "internalType": "struct DualSign.Transaction",
+        "internalType": "struct gn.Transaction",
         "name": "_transaction",
         "type": "tuple"
       },
@@ -241,7 +241,7 @@
           { "internalType": "uint256", "name": "chainId", "type": "uint256" },
           { "internalType": "uint256", "name": "secretPin", "type": "uint256" }
         ],
-        "internalType": "struct DualSign.Transaction",
+        "internalType": "struct gn.Transaction",
         "name": "_transaction",
         "type": "tuple"
       }
@@ -278,7 +278,7 @@
           { "internalType": "uint256", "name": "chainId", "type": "uint256" },
           { "internalType": "uint256", "name": "secretPin", "type": "uint256" }
         ],
-        "internalType": "struct DualSign.Transaction",
+        "internalType": "struct gn.Transaction",
         "name": "_transaction",
         "type": "tuple"
       }

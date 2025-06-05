@@ -49,7 +49,7 @@ const AccordianExpanded: React.FC<AccordianExpandedProps> = ({
                                 <div className="table-user flex items-center">
                                     <Blockies
                                         className="table-user-gradient"
-                                        seed={transaction.receiverAddress ? transaction.receiverAddress : "dualsign"}
+                                        seed={transaction.receiverAddress ? transaction.receiverAddress : "gn"}
                                         size={10}
                                         scale={3}
                                     />
@@ -75,7 +75,7 @@ const AccordianExpanded: React.FC<AccordianExpandedProps> = ({
                                 <div className="value flex items-center">
                                     <Blockies
                                         className="table-user-gradient"
-                                        seed={transaction.senderAddress ? transaction.senderAddress : "dualsign"}
+                                        seed={transaction.senderAddress ? transaction.senderAddress : "gn"}
                                         size={10}
                                         scale={3}
                                     />

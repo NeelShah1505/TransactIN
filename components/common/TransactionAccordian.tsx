@@ -6,7 +6,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { styled } from "@mui/material/styles";
 import { Grid } from "@mui/material";
-import dualsignABI from "@/contract/dualsign.json";
+import gnABI from "@/contract/gn.json";
 import {
   Address,
   createPublicClient,
@@ -199,7 +199,7 @@ const TransactionAccordion: React.FC<TransactionAccordionProps> = ({
       const signature = await client.signTypedData({
         account: address as Address,
         domain: {
-          name: "DualSign",
+          name: "gn",
           version: "1",
           chainId: BigInt(421614),
           verifyingContract: "0x1302017D2d3aA9Fe213cd7F9fa76d9299722690E", //contract address
@@ -339,7 +339,7 @@ const TransactionAccordion: React.FC<TransactionAccordionProps> = ({
       const { request } = await publicClient.simulateContract({
         account: address ? address : undefined,
         address: "0x1302017D2d3aA9Fe213cd7F9fa76d9299722690E",
-        abi: dualsignABI,
+        abi: gnABI,
         functionName: functionCalled,
         args: [
           transaction.senderSignature,

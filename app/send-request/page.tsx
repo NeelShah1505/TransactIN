@@ -177,7 +177,7 @@ const InitiateTransaction: React.FC = () => {
       const signature = await walletClient.signTypedData({
         account: address as Address,
         domain: {
-          name: "DualSign",
+          name: "gn",
           version: "1",
           chainId: BigInt(421614),
           verifyingContract: "0x1302017D2d3aA9Fe213cd7F9fa76d9299722690E", //contract address

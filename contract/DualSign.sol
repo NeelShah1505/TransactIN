@@ -9,7 +9,7 @@ import {IClient} from "@chainlink/contracts-ccip/src/v0.8/ccip/interfaces/IClien
 import {Client} from "@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract DualSign is EIP712, Ownable {
+contract gn is EIP712, Ownable {
     using ECDSA for bytes32;
 
     IRouterClient private s_router;
@@ -50,7 +50,7 @@ contract DualSign is EIP712, Ownable {
     //base chain selector: 10344971235874465080 chain Id :84532
 
     // router address for CCIP
-    constructor(address _router) EIP712("DualSign", "1") Ownable(msg.sender) {
+    constructor(address _router) EIP712("gn", "1") Ownable(msg.sender) {
         s_router = IRouterClient(_router); //0x2a9C5afB0d0e4BAb2BCdaE109EC4b0c4Be15a165
     }
 
